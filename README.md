@@ -3,7 +3,8 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/status-pre--launch%20beta-FF6A2B?style=flat-square" alt="Pre-launch beta">
+  <img src="https://img.shields.io/badge/status-mainnet%20beta-FF6A2B?style=flat-square" alt="Mainnet beta">
+  <img src="https://img.shields.io/badge/Sourcify-8%2F8%20verified-2E7D32?style=flat-square" alt="8 of 8 contracts verified on Sourcify">
   <img src="https://img.shields.io/badge/chain-Robinhood%20Chain-0B1F33?style=flat-square" alt="Robinhood Chain">
   <img src="https://img.shields.io/badge/Uniswap-v4%20hook-0E3B43?style=flat-square" alt="Uniswap v4 hook">
   <img src="https://img.shields.io/badge/custody-none-3CC4C4?style=flat-square" alt="Non-custodial">
@@ -178,6 +179,25 @@ The token buys **cheaper fills and more capacity**. It never buys execution prio
 
 Alongside the contracts: a reference **keeper** (arm, disarm, fire, ratchet, arbitrage, settle, claim) that reads every due line in one batched call, the **app** (Tackle Box, Cast, Catch Log, Reel Race), and the **landing page and docs**.
 
+### 📍 Deployed on Robinhood Chain
+
+Live on mainnet since **29 October 2026** (block 26295950). Every contract's source is verified on Sourcify; each link opens the matched code.
+
+| Contract | Address |
+|---|---|
+| **AnglerHook** | [`0xe1ed33343610ea9AF8B1d162f8e403FF6287e840`](https://repo.sourcify.dev/4663/0xe1ed33343610ea9AF8B1d162f8e403FF6287e840) |
+| **Harbor** | [`0xFa1aa1E2BF84164b9669cF87840217D04D9039ba`](https://repo.sourcify.dev/4663/0xFa1aa1E2BF84164b9669cF87840217D04D9039ba) |
+| **TackleBoxFactory** | [`0x14c64Cd1adb6A96Ae436cb772B06caaEa56282CE`](https://repo.sourcify.dev/4663/0x14c64Cd1adb6A96Ae436cb772B06caaEa56282CE) |
+| **TackleBox** (implementation) | [`0xDAe553a5158f404f9264229a37eF6ad04A54E8b8`](https://repo.sourcify.dev/4663/0xDAe553a5158f404f9264229a37eF6ad04A54E8b8) |
+| **FeeRouter** | [`0x4679B0B09AA2B0676bd0Caaff4Cbc0CE9E93b671`](https://repo.sourcify.dev/4663/0x4679B0B09AA2B0676bd0Caaff4Cbc0CE9E93b671) |
+| **ReelRegistry** | [`0xc76744438278937637810Ac80f700Fc0EB963D00`](https://repo.sourcify.dev/4663/0xc76744438278937637810Ac80f700Fc0EB963D00) |
+| **BuybackVault** | [`0xF26Bef0c07240e9F1ADf7197CdaEf4B6EEa8f10f`](https://repo.sourcify.dev/4663/0xF26Bef0c07240e9F1ADf7197CdaEf4B6EEa8f10f) |
+| **AnglerArb** | [`0x40BF3E8e14EC52eB59ab06fAdec0d5434bd7d50e`](https://repo.sourcify.dev/4663/0x40BF3E8e14EC52eB59ab06fAdec0d5434bd7d50e) |
+| Uniswap v4 PoolManager | `0x8366a39CC670B4001A1121B8F6A443A643e40951` |
+| House keeper | `0x239cE3e5163f3456c0b81095C9c2e3A43d5A46a6` |
+
+**Listed coins at launch:** U and GIGATENEV. More coins are listed as their main pools hold real liquidity.
+
 ### 🛡️ Safety in the beta
 
 We would rather say this plainly:
@@ -187,18 +207,19 @@ We would rather say this plainly:
 - **No key can move a Tackle Box's coins.** No proxy, no upgrade path.
 - **Lines only on listed coins**, each priced by its own main pool, so a pool made up for the occasion cannot price a line.
 - **One owner key on the Harbor:** caps, pools, tiers, keepers and a coin's pool change only after **24 hours in public**. The **brake** stops new lines and new pools at once and never touches existing lines, cancels or withdrawals.
-- **Source on Sourcify** from day one, so anyone can match the bytecode to the code.
+- **Source on Sourcify** from day one: all eight contracts are a full match, so anyone can check the bytecode against the code.
 
 ---
 
 ## Roadmap
 
-| Phase | What ships |
-|---|---|
-| **MVP** | Hook, Tackle Box and arbitrage; reference keeper; app with Tackle Box, Cast, Catch Log and Reel Race; docs and share cards; a capped mainnet beta; then the token, once every launch gate is public |
-| **Growth** (months 1 to 3) | More graduated coins, tokenized stocks on Robinhood Chain, ladders up to 16 rungs, OCO, Reel Race season 1, web push alerts |
-| **Scale** (months 3 to 6) | Limit buys, an integrator SDK with the 30% share, take-profit at graduation for launchpad buyers, an external review, caps raised in published steps |
-| **Ecosystem** (months 6 to 12) | A public map of where Robinhood Chain takes profit, keeper guilds, strategy lines |
+| Phase | What ships | Status |
+|---|---|---|
+| **MVP** | Hook, Tackle Box and arbitrage; reference keeper; app with Tackle Box, Cast, Catch Log and Reel Race; docs and share cards; a capped mainnet beta | ✅ Live |
+| **Token** | `$ANGLER` fair launch, once every launch gate is public | Next |
+| **Growth** (months 1 to 3) | More graduated coins, tokenized stocks on Robinhood Chain, ladders up to 16 rungs, OCO, Reel Race season 1, web push alerts | Planned |
+| **Scale** (months 3 to 6) | Limit buys, an integrator SDK with the 30% share, take-profit at graduation for launchpad buyers, an external review, caps raised in published steps | Planned |
+| **Ecosystem** (months 6 to 12) | A public map of where Robinhood Chain takes profit, keeper guilds, strategy lines | Planned |
 
 ---
 
